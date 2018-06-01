@@ -12,6 +12,9 @@
     ~/.zsh:
     ~/.zshrc:
     ~/.oh-my-zsh:
+    ~/.tmux: .tmux
+    ~/.tmux.conf: .tmux/.tmux.conf
+    ~/.tmux.conf.local: tmux.conf.local
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
