@@ -7,8 +7,7 @@
 - link:
     ~/.dotfiles: ''
     ~/.tmux.conf:
-    ~/.vim:
-    ~/.vimrc:
+    ~/.vim_runtime: vimrc
     ~/.zsh:
     ~/.zshrc:
     ~/.oh-my-zsh:
@@ -18,3 +17,4 @@
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
+  - [sh ~/.vim_runtime/install_awesome_vimrc.sh]
