@@ -88,4 +88,4 @@ export PATH=$HOME/bin:$PATH
 if [ -f ~/.config/exercism/exercism_completion.zsh ]; then
 	. ~/.config/exercism/exercism_completion.zsh
 fi
-
+source $HOME/.cargo/env
