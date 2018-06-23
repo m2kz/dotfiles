@@ -89,3 +89,8 @@ if [ -f ~/.config/exercism/exercism_completion.zsh ]; then
 	. ~/.config/exercism/exercism_completion.zsh
 fi
 source $HOME/.cargo/env
+
+# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+export PATH="$PATH:$HOME/.rvm/bin"
+export PATH=$PATH:/usr/local/go/bin
+eval $(thefuck --alias)
