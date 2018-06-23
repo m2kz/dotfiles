@@ -21,8 +21,8 @@
   - [ln -fns my_configs.vim ~/.vim_runtime/my_configs.vim]
   - ["git clone --depth=1 git@github.com:rust-lang/rust.vim.git ~/.vim_runtime/my_plugins/rust.vim || git -C ~/.vim_runtime\
     /my_plugins/rust.vim pull"]
-  - ["git clone --depth=1 git@github.com/maralla/completor.vim.git ~/.vim_runtime/my_plugins/completor.vim || git -C ~/.vim_runtime\
+  - ["git clone --depth=1 git@github.com:maralla/completor.vim.git ~/.vim_runtime/my_plugins/completor.vim || git -C ~/.vim_runtime\
     /my_plugins/completor.vim pull"]
-  - ["git clone --depth=1 git@github.com/unixorn/git-extra-commands.git ~/.oh-my-zsh/custom/plugins/ || git -C ~/.oh-my-zsh\
+  - ["git clone --depth=1 git@github.com:unixorn/git-extra-commands.git ~/.oh-my-zsh/custom/plugins/ || git -C ~/.oh-my-zsh\
     /custom/plugins/ pull"]
 
