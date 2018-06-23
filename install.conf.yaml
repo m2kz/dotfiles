@@ -23,6 +23,6 @@
     /my_plugins/rust.vim pull"]
   - ["git clone --depth=1 git@github.com:maralla/completor.vim.git ~/.vim_runtime/my_plugins/completor.vim || git -C ~/.vim_runtime\
     /my_plugins/completor.vim pull"]
-  - ["git clone --depth=1 git@github.com:unixorn/git-extra-commands.git ~/.oh-my-zsh/custom/plugins/ || git -C ~/.oh-my-zsh\
-    /custom/plugins/ pull"]
+  - ["git clone --depth=1 git@github.com:unixorn/git-extra-commands.git ~/.oh-my-zsh/custom/plugins/git-extra-commands || git -C ~/.oh-my-zsh\
+    /custom/plugins/git-extra-commands pull"]
 
