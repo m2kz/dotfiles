@@ -50,7 +50,7 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(gitfast autojump autopep8 catimg command-not-found common-aliases compleat debian dircycle history pip pyenv pylint python systemd taskwarrior tmux vi-mode web-search git git-extras sudo git-extra-commands zsh-syntax-highlighting) 
+plugins=(gitfast autojump autopep8 catimg command-not-found common-aliases compleat debian dircycle history pip pyenv pylint python systemd taskwarrior tmux vi-mode web-search git git-extras sudo git-extra-commands zsh-syntax-highlighting zsh-autosuggestions) 
 
 source $ZSH/oh-my-zsh.sh
 
@@ -94,3 +94,4 @@ source $HOME/.cargo/env
 export PATH="$PATH:$HOME/.rvm/bin"
 export PATH=$PATH:/usr/local/go/bin
 eval $(thefuck --alias)
+source ./oh-my-git/prompt.sh
