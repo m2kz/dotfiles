@@ -26,7 +26,7 @@
     /custom/plugins/git-extra-commands pull"]
   - ["git clone git@github.com:zsh-users/zsh-syntax-highlighting.git ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting || git -C ~/.oh-my-zsh/\
       custom/plugins/zsh-syntax-highlighting pull"]
-  - ["git cleanone git@github.com:zsh-users/zsh-autosuggestions ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions || git -C ~/.oh-my-zsh/\
+  - ["git clone git@github.com:zsh-users/zsh-autosuggestions ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions || git -C ~/.oh-my-zsh/\
     custom/plugins/zsh-autosuggestions pull"]
   - ["git clone git@github.com:koalaman/shellcheck.git ~/.vim_runtime/my_plugins/shellcheck || git -C ~/.vim_runtime\
     /my_plugins/shellcheck pull"]
