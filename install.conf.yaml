@@ -8,7 +8,6 @@
     ~/.dotfiles: ''
     ~/.tmux.conf:
     ~/.vim_runtime: vimrc
-    ~/.zsh:
     ~/.zshrc:
     ~/.oh-my-zsh:
     ~/.tmux: .tmux
@@ -19,10 +18,9 @@
   - [git submodule update --init --recursive, Installing submodules]
   - [sh ~/.vim_runtime/install_awesome_vimrc.sh]
   - [ln -fns my_configs.vim ~/.vim_runtime/my_configs.vim]
+  - [ln -sf $HOME/.vimrc $HOME/.config/nvim/init.vim]
   - ["git clone --depth=1 git@github.com:rust-lang/rust.vim.git ~/.vim_runtime/my_plugins/rust.vim || git -C ~/.vim_runtime\
     /my_plugins/rust.vim pull"]
-  - ["git clone --depth=1 git@github.com:maralla/completor.vim.git ~/.vim_runtime/my_plugins/completor.vim || git -C ~/.vim_runtime\
-    /my_plugins/completor.vim pull"]
   - ["git clone --depth=1 git@github.com:unixorn/git-extra-commands.git ~/.oh-my-zsh/custom/plugins/git-extra-commands || git -C ~/.oh-my-zsh\
     /custom/plugins/git-extra-commands pull"]
   - ["git clone git@github.com:zsh-users/zsh-syntax-highlighting.git ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting || git -C ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting pull"]
