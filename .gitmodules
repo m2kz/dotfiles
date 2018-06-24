@@ -10,6 +10,6 @@
 [submodule "vimrc"]
 	path = vimrc
 	url = git@github.com:amix/vimrc.git
-[submodule "oh-my-git"]
-	path = oh-my-git
-	url = git@github.com:arialdomartini/oh-my-git.git
+[submodule "antigen"]
+	path = antigen
+	url = git@github.com:zsh-users/antigen.git
