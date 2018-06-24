@@ -94,4 +94,5 @@ source $HOME/.cargo/env
 export PATH="$PATH:$HOME/.rvm/bin"
 export PATH=$PATH:/usr/local/go/bin
 eval $(thefuck --alias)
-source ./oh-my-git/prompt.sh
+source $HOME/.antigen/antigen.zsh
+antigen apply
