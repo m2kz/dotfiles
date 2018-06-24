@@ -17,7 +17,7 @@
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
   - [sh ~/.vim_runtime/install_awesome_vimrc.sh]
-  - [ln -fns my_configs.vim ~/.vim_runtime/my_configs.vim]
+  - [yes | cp -f my_configs.vim $HOME/.vim_runtime/my_configs.vim]
   - [ln -sf $HOME/.vimrc $HOME/.config/nvim/init.vim]
   - ["git clone --depth=1 git@github.com:rust-lang/rust.vim.git ~/.vim_runtime/my_plugins/rust.vim || git -C ~/.vim_runtime\
     /my_plugins/rust.vim pull"]
