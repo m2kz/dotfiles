@@ -50,7 +50,7 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(gitfast autojump autopep8 catimg command-not-found common-aliases compleat debian dircycle history pip pyenv pylint python systemd taskwarrior tmux vi-mode web-search git git-extras sudo git-extra-commands) 
+plugins=(gitfast autojump autopep8 catimg command-not-found common-aliases compleat debian dircycle history pip pyenv pylint python systemd taskwarrior tmux vi-mode web-search git git-extras sudo git-extra-commands zsh-syntax-highlighting) 
 
 source $ZSH/oh-my-zsh.sh
 
@@ -89,3 +89,8 @@ if [ -f ~/.config/exercism/exercism_completion.zsh ]; then
 	. ~/.config/exercism/exercism_completion.zsh
 fi
 source $HOME/.cargo/env
+
+# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+export PATH="$PATH:$HOME/.rvm/bin"
+export PATH=$PATH:/usr/local/go/bin
+eval $(thefuck --alias)
