@@ -32,3 +32,4 @@
   - ["git clone git@github.com:koalaman/shellcheck.git ~/.vim_runtime/my_plugins/shellcheck || git -C ~/.vim_runtime\
     /my_plugins/shellcheck pull"]
   - ["if [ $DESKTOP_SESSION = /usr/bin/i3 ]; then ln -sf `pwd`/i3_xfce_config $HOME/.config/i3/config; fi"]
+  - ["if [ $DESKTOP_SESSION = plasma ]; then ln -sf `pwd`/i3_kde_config $HOME/.config/i3/config; fi"] 
