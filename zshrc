@@ -97,3 +97,4 @@ eval $(thefuck --alias)
 source $HOME/.antigen/antigen.zsh
 antigen apply
 export LFS=/mnt/lfs
+export PATH=$PATH:/usr/local/go/bin
