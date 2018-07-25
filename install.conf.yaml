@@ -11,6 +11,7 @@
     ~/.antigen:
     ~/.zshrc:
     ~/.oh-my-zsh:
+    ~/.gitconfig:
     ~/.tmux: .tmux
     ~/.tmux.conf: .tmux/.tmux.conf
     ~/.tmux.conf.local: tmux.conf.local
@@ -21,8 +22,6 @@
   - [yes | cp -f my_configs.vim $HOME/.vim_runtime/my_configs.vim]
   - [ln -sf $HOME/.vimrc $HOME/.config/nvim/init.vim]
   - [ln -sf $HOME/.oh-my-zsh $HOME/.antigen/bundles/robbyrussell/oh-my-zsh]
-  - ["git clone https://github.com/fatih/vim-go.git ~/.vim_runtime/my_plugins/vim-go || git -C ~/.vim_runtime\
-    /my_plugins/vim-go pull"]
   - ["git clone --depth=1 git@github.com:rust-lang/rust.vim.git ~/.vim_runtime/my_plugins/rust.vim || git -C ~/.vim_runtime\
      /my_plugins/rust.vim pull"]
   - ["git clone --depth=1 git@github.com:unixorn/git-extra-commands.git ~/.oh-my-zsh/custom/plugins/git-extra-commands || git -C ~/.oh-my-zsh\
@@ -33,5 +32,13 @@
     custom/plugins/zsh-autosuggestions pull"]
   - ["git clone git@github.com:koalaman/shellcheck.git ~/.vim_runtime/my_plugins/shellcheck || git -C ~/.vim_runtime\
     /my_plugins/shellcheck pull"]
+  - ["git clone https://github.com/tpope/vim-rails.git ~/.vim_runtime/my_plugins/vim-rails || git -C ~/.vim_runtime\
+    /my_plugins/vim-rails pull"]
+  - ["git clone git://github.com/tpope/vim-bundler.git ~/.vim_runtime/my_plugins/vim-bundler || git -C ~/.vim_runtime\
+    /my_plugins/vim-bundler pull"]
+  -  ["git clone git://github.com/tpope/vim-dispatch.git ~/.vim_runtime/my_plugins/vim-dispatch || git -C ~/.vim_runtime\
+    /my_plugins/vim-dispatch pull"]
+  -  ["git clone git://github.com/vim-ruby/vim-ruby.git ~/.vim_runtime/my_plugins/vim-ruby || git -C ~/.vim_runtime\
+    /my_plugins/vim-ruby pull"]
   - ["if [ $DESKTOP_SESSION = /usr/bin/i3 ]; then ln -sf `pwd`/i3_xfce_config $HOME/.config/i3/config; fi"]
   - ["if [ $DESKTOP_SESSION = plasma ]; then ln -sf `pwd`/i3_kde_config $HOME/.config/i3/config; fi"] 

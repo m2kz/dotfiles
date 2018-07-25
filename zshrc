@@ -97,4 +97,5 @@ eval $(thefuck --alias)
 source $HOME/.antigen/antigen.zsh
 antigen apply
 export LFS=/mnt/lfs
-export PATH=$PATH:/usr/local/go/bin
+alias ping='ping 8.8.8.8'
+export EDITOR=nvim
