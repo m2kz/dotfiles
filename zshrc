@@ -99,3 +99,4 @@ antigen apply
 export LFS=/mnt/lfs
 alias ping='ping 8.8.8.8'
 export EDITOR=nvim
+source /etc/profile.d/rvm.sh
