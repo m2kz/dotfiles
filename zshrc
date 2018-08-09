@@ -99,3 +99,7 @@ antigen apply
 export LFS=/mnt/lfs
 alias ping='ping 8.8.8.8'
 export EDITOR=nvim
+. $HOME/z/z.sh
+alias la="exa -abghl --git --color=automatic"
+alias c='pygmentize -O style=colorful -f console256 -g'
+
