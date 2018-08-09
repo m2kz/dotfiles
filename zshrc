@@ -102,4 +102,4 @@ export EDITOR=nvim
 . $HOME/z/z.sh
 alias la="exa -abghl --git --color=automatic"
 alias c='pygmentize -O style=colorful -f console256 -g'
-
+source /etc/profile.d/rvm.sh
