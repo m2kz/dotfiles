@@ -103,3 +103,27 @@ export EDITOR=nvim
 alias la="exa -abghl --git --color=automatic"
 alias c='pygmentize -O style=colorful -f console256 -g'
 source /etc/profile.d/rvm.sh
+alias in='task add +in'
+export PS1='$(task +in +PENDING count) '$PS1
+tickle () {
+    deadline=$1
+    shift
+    in +tickle wait:$deadline $@
+}
+alias tick=tickle
+alias think='tickle +1d'
+alias rnd='task add +rnd +next +@computer +@online'
+webpage_title (){
+    wget -qO- "$*" | hxselect -s '\n' -c  'title' 2>/dev/null
+}
+
+read_and_review (){
+    link="$1"
+    title=$(webpage_title $link)
+    echo $title
+    descr="\"Read and review: $title\""
+    id=$(task add +next +rnr "$descr" | sed -n 's/Created task \(.*\)./\1/p')
+    task "$id" annotate "$link"
+}
+
+alias rnr=read_and_review
