@@ -15,6 +15,7 @@
     ~/.tmux: .tmux
     ~/.tmux.conf: .tmux/.tmux.conf
     ~/.tmux.conf.local: tmux.conf.local
+    ~/.taskrc: taskrc
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
