@@ -127,3 +127,6 @@ read_and_review (){
 }
 
 alias rnr=read_and_review
+bkr() {
+    (nohup "$@" &>/dev/null &)
+}
