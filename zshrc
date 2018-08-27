@@ -50,7 +50,7 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(gitfast autopep8 command-not-found common-aliases compleat debian dircycle history pip pyenv pylint python systemd taskwarrior tmux web-search git git-extras sudo git-extra-commands zsh-syntax-highlighting zsh-autosuggestions git-flow-avh tig tmuxinator colored-man-pages)
+plugins=(gitfast autopep8 command-not-found common-aliases compleat debian dircycle history pip pyenv pylint python taskwarrior tmux web-search git git-extras sudo git-extra-commands zsh-syntax-highlighting zsh-autosuggestions git-flow-avh tig tmuxinator)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -102,7 +102,7 @@ export EDITOR=nvim
 . $HOME/z/z.sh
 alias la="exa -abghl --git --color=automatic"
 alias c='pygmentize -O style=colorful -f console256 -g'
-source /etc/profile.d/rvm.sh
+# source /etc/profile.d/rvm.sh
 alias in='task add +in'
 export PS1='$(task +in +PENDING count) '$PS1
 tickle () {
@@ -131,3 +131,6 @@ bkr() {
     (nohup "$@" &>/dev/null &)
 }
 alias mux=tmuxinator
+# export PATH="$PATH:$HOME/esp/xtensa-esp32-elf/bin"
+# export IDF_PATH=$HOME/esp/esp-idf
+fpath=(~/bin/ $fpath)
