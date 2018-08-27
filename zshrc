@@ -131,3 +131,4 @@ bkr() {
     (nohup "$@" &>/dev/null &)
 }
 alias mux=tmuxinator
+fpath=(~/.zsh.d/ $fpath)
