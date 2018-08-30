@@ -135,3 +135,7 @@ alias mux=tmuxinator
 # export IDF_PATH=$HOME/esp/esp-idf
 fpath=(~/bin/ $fpath)
 alias mountp='mount | column -t'
+HISTFILE=~/.zsh_history
+HISTSIZE=999999999
+SAVEHIST=$HISTSIZE
+setopt SHARE_HISTORY
