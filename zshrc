@@ -92,7 +92,7 @@ source $HOME/.cargo/env
 
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"
-export PATH=$PATH:/usr/local/go/bin:$HOME/nixnote2/appdir
+export PATH=$PATH:/usr/local/go/bin:$HOME/nixnote2/appdir:$HOME/go/bin
 eval $(thefuck --alias)
 source $HOME/.antigen/antigen.zsh
 antigen apply
