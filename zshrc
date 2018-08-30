@@ -134,3 +134,4 @@ alias mux=tmuxinator
 # export PATH="$PATH:$HOME/esp/xtensa-esp32-elf/bin"
 # export IDF_PATH=$HOME/esp/esp-idf
 fpath=(~/bin/ $fpath)
+alias mountp='mount | column -t'
