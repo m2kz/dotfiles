@@ -45,7 +45,6 @@ bindsym $mod+Return exec konsole
 # Kill focused window
 bindsym $mod+Shift+q kill
 
-
 # rofi
 bindsym $mod+d exec --no-startup-id i3-dmenu-desktop --dmenu='rofi -i -dmenu -font "IBM Plex Sans Medium 15" '
 # Screenshot (now provided by Plasma)
@@ -220,6 +219,7 @@ for_window [class="guake"] floating enable;
 exec --no-startup-id wmctrl -c Plasma
 for_window [title="Desktop — Plasma"] kill; floating enable; border none
 
+exec --no-startup-id compton
 
 ## Avoid tiling popups, dropdown windows from plasma
 # for the first time, manually resize them, i3 will remember the setting for floating windows
@@ -231,5 +231,4 @@ for_window [class="krunner"] floating enable; border none
 for_window [class="Kmix"] floating enable; border none
 for_window [class="Klipper"] floating enable; border none
 for_window [class="Plasmoidviewer"] floating enable; border none
-bindsym F10 exec --no-startup-id /home/michal/scripts/i3shortcuts.sh
 for_window [instance="konsole" title="i3 Shortcuts"] floating enable, move absolute position center, resize grow left 318, resize grow right 318, resize grow down 115, resize grow up 115
