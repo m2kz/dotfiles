@@ -1,0 +1,34 @@
+#!/usr/bin/env python
+import os, re, sys
+from tempfile import mkstemp
+
+znc_password = os.environ['ZNC_PASSWORD']
+znc_port = os.environ['ZNC_PORT']
+znc_login = os.environ['ZNC_LOGIN']
+
+configuration_file = '%s/.irssi/config' % os.environ['HOME']
+irssi_base_dir = os.path.dirname(configuration_file)
+
+# read current config
+with open(configuration_file) as f:
+    config = f.read()
+
+# replace placeholder with real password
+config = re.sub('ZNC_PASSWORD', znc_password, config)
+config = re.sub('ZNC_PORT', znc_port, config)
+config = re.sub('ZNC_LOGIN', znc_login, config)
+
+# store config in temporary file
+fd, temp_config = mkstemp()
+
+with open(temp_config, 'w') as f:
+    f.write(config)
+
+# run irssi
+status = os.system('/usr/bin/irssi --config=%s --home=%s 2>>%s/logs/stderr' % (temp_config, irssi_base_dir, irssi_base_dir))
+
+# clean up
+os.close(fd)
+os.remove(temp_config)
+
+sys.exit(status)
