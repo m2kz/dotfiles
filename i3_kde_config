@@ -197,16 +197,16 @@ mode "resize" {
 bindsym $mod+r mode "resize"
 
 # i3bar
-#bar {
-#        verbose yes
-#        position bottom 
-#        status_command i3blocks
-#        i3bar_command i3bar -t
-#        colors {
-#          statusline #ffffff
-#          background $transparent
-#        }
-#}
+bar {
+        verbose yes
+        position bottom 
+        status_command i3status
+        i3bar_command i3bar -t
+        colors {
+          statusline #ffffff
+          background $transparent
+        }
+}
 
 bindsym $mod+x move container to output primary
 
