@@ -198,7 +198,7 @@ bindsym $mod+r mode "resize"
 # i3bar
 bar {
         verbose yes
-        position bottom 
+        position top 
         status_command i3status
         i3bar_command i3bar -t
         colors {
