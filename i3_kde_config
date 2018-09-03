@@ -200,6 +200,7 @@ bar {
         verbose yes
         position top 
         status_command i3status
+        workspace_buttons no
         i3bar_command i3bar -t
         colors {
           statusline #ffffff
