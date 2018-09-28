@@ -12,12 +12,14 @@
     ~/.zshrc:
     ~/.oh-my-zsh:
     ~/.gitconfig:
+    ~/.gitattributes:
     ~/.tmux: .tmux
     ~/.tmux.conf: .tmux/.tmux.conf
     ~/.tmux.conf.local: tmux.conf.local
     ~/.taskrc: taskrc
     ~/.irssi: irssi
     ~/.i3status.conf: i3/i3status.conf
+    ~/.lessfilter:
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
