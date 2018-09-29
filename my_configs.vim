@@ -3,7 +3,6 @@ set mouse=a
 set guicursor=
 set wrap
 set autoindent
-set filetype indent on
 set ignorecase
 set incsearch
 set smartcase
@@ -19,8 +18,6 @@ set noerrorbells
 set visualbell
 set title
 set spell
-syntax enable
-
 
 " https://marcgg.com/blog/2016/03/01/vimrc-example/
 map <leader>s :source ~/.vimrc<CR>
@@ -41,8 +38,8 @@ set expandtab
 let &path.="src/include,/usr/include/AL,"
 
 " https://github.com/VundleVim/Vundle.vim
-set nocompatible        
-filetype off                  
+set nocompatible
+filetype off
 
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
@@ -101,6 +98,6 @@ let g:syntastic_cpp_clang_tidy_args="-std=c++14"
 let g:syntastic_cpp_gcc_args="-std=c++14"
 let g:syntastic_cpp_compiler_options=" -std=c++14"
 let g:syntastic_aggregate_errors=1
-"let g:syntastic_cpp_checkers=['cppcheck']
+let g:syntastic_cpp_checkers=['cppcheck']
 let g:syntastic_cpp_clang_tidy_exec="clang-tidy-6.0"
 let g:syntastic_c_checkers=['cppcheck']
