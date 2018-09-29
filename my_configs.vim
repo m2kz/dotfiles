@@ -84,7 +84,7 @@ let g:cpp_concepts_highlight = 1
 " https://gist.github.com/lefticus/9310227/e0a7a531979e9b77620c7e6678bcca7926c8cc08
 set backspace=indent,eol,start
 set showcmd
-hi CursorLine   cterm=underline ctermbg=none ctermfg=none guibg=white guifg=none
+hi CursorLine   cterm=underline ctermbg=none ctermfg=none guifg=none
 set cursorline
 set lcs=trail:·,tab:»·
 set list
@@ -101,3 +101,10 @@ let g:syntastic_aggregate_errors=1
 let g:syntastic_cpp_checkers=['cppcheck']
 let g:syntastic_cpp_clang_tidy_exec="clang-tidy-6.0"
 let g:syntastic_c_checkers=['cppcheck']
+
+" http://spf13.com/post/perfect-vimrc-vim-config-file/
+silent! call pathogen\#helptags()
+silent! call pathogen\#runtime_append_all_bundles()
+nmap <silent> <leader>/ :nohlsearch<CR>
+
+
