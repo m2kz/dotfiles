@@ -43,7 +43,13 @@
     /my_plugins/vim-bundler pull"]
   -  ["git clone git://github.com/tpope/vim-dispatch.git ~/.vim_runtime/my_plugins/vim-dispatch || git -C ~/.vim_runtime\
     /my_plugins/vim-dispatch pull"]
+  -  ["git clone git@github.com:vim-syntastic/syntastic.git ~/.vim_runtime/my_plugins/syntastic || git -C ~/.vim_runtime\
+    /my_plugins/syntastic pull"]
+	- ["git clone git://github.com/majutsushi/tagbar ~/.vim_runtime/my_plugins/tagbar || git -C ./vim_runtime\
+	/my_plugins/tagbar pull"]
   -  ["git clone git://github.com/vim-ruby/vim-ruby.git ~/.vim_runtime/my_plugins/vim-ruby || git -C ~/.vim_runtime\
     /my_plugins/vim-ruby pull"]
+  - ["git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim || git -C ~/.vim/bundle/Vundle.vim pull"]
+  - ["git clone git@github.com:Valloric/YouCompleteMe.git ~/.vim/bundle || git -C ~/.vim/bundle/YouCompleteMe pull"]
   - ["if [ $DESKTOP_SESSION = /usr/bin/i3 ]; then ln -sf `pwd`/i3_xfce_config $HOME/.config/i3/config; fi"]
   - ["if [ $DESKTOP_SESSION = plasma ]; then ln -sf `pwd`/i3_kde_config $HOME/.config/i3/config; fi"] 
