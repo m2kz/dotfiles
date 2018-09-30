@@ -26,6 +26,7 @@
   - [yes | cp -f my_configs.vim $HOME/.vim_runtime/my_configs.vim]
   - [curl -fLo $HOME/.vim_runtime/autoload/plug.vim "raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim"]
   - [curl -fLo $HOME/.vim_runtime/autoload/a.vim raw.githubusercontent.com/vim-scripts/a.vim/master/plugin/a.vim]
+  - ['wget -O $HOME/.vim_runtime/autoload/hjkl.vim www.vim.org/scripts/download_script.php\?src_id\=19242']
   - [ln -sf $HOME/.vimrc $HOME/.config/nvim/init.vim]
   - ["git clone --depth=1 git@github.com:rust-lang/rust.vim.git ~/.vim_runtime/my_plugins/rust.vim || git -C ~/.vim_runtime\
      /my_plugins/rust.vim pull"]

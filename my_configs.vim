@@ -50,7 +50,13 @@ Plugin 'honza/vim-snippets'
 Plugin 'octol/vim-cpp-enhanced-highlight'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
 Plugin 'majutsushi/tagbar'
+Plugin 'tpope/vim-commentary'
+Plugin 'ervandew/supertab'
+Plugin 'godlygeek/tabular'
+Plugin 'shougo/unite.vim'
+Plugin 'nathanaelkane/vim-indent-guides'
 call vundle#end()
 
 " Vim-plug
