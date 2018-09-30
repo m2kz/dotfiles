@@ -5,9 +5,9 @@ set wrap
 set autoindent
 set ignorecase
 set incsearch
+set encoding=utf-8
 set smartcase
 set display+=lastline
-set encoding=utf-8
 set linebreak
 set wrap
 set laststatus=2
@@ -18,6 +18,7 @@ set noerrorbells
 set visualbell
 set title
 set spell
+colorscheme gruvbox
 
 " https://marcgg.com/blog/2016/03/01/vimrc-example/
 map <leader>s :source ~/.vimrc<CR>
@@ -48,6 +49,9 @@ Plugin 'Valloric/YouCompleteMe'
 Plugin 'SirVer/ultisnips'
 Plugin 'honza/vim-snippets'
 Plugin 'octol/vim-cpp-enhanced-highlight'
+Plugin 'scrooloose/nerdcommenter'
+Plugin 'vim-airline/vim-airline'
+Plugin 'majutsushi/tagbar'
 call vundle#end()
 
 " Vim-plug
@@ -101,10 +105,3 @@ let g:syntastic_aggregate_errors=1
 let g:syntastic_cpp_checkers=['cppcheck']
 let g:syntastic_cpp_clang_tidy_exec="clang-tidy-6.0"
 let g:syntastic_c_checkers=['cppcheck']
-
-" http://spf13.com/post/perfect-vimrc-vim-config-file/
-silent! call pathogen\#helptags()
-silent! call pathogen\#runtime_append_all_bundles()
-nmap <silent> <leader>/ :nohlsearch<CR>
-
-
