@@ -18,7 +18,6 @@ set noerrorbells
 set visualbell
 set title
 set spell
-colorscheme gruvbox
 
 " https://marcgg.com/blog/2016/03/01/vimrc-example/
 map <leader>s :source ~/.vimrc<CR>
