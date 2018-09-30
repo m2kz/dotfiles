@@ -6,15 +6,14 @@
 
 - link:
     ~/.dotfiles: ''
-    ~/.tmux.conf:
     ~/.vim_runtime: vimrc
     ~/.antigen:
     ~/.zshrc:
     ~/.oh-my-zsh:
     ~/.gitconfig:
     ~/.gitattributes:
-    ~/.tmux: .tmux
-    ~/.tmux.conf: .tmux/.tmux.conf
+    ~/.tmux: tmux
+    ~/.tmux.conf: tmux/.tmux.conf
     ~/.tmux.conf.local: tmux.conf.local
     ~/.taskrc: taskrc
     ~/.irssi: irssi
