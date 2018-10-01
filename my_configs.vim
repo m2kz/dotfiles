@@ -110,7 +110,7 @@ set backspace=indent,eol,start
 set showcmd
 hi CursorLine   cterm=underline ctermbg=none ctermfg=none guifg=none
 set cursorline
-set lcs=trail:·,tab:»·
+"set lcs=trail:·,tab:»·
 set list
 
 let g:syntastic_always_populate_loc_list=1
