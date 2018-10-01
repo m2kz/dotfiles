@@ -19,6 +19,7 @@
     ~/.irssi: irssi
     ~/.i3status.conf: i3/i3status.conf
     ~/.lessfilter:
+    ~/.ycm_extra_conf.py:
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]

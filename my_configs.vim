@@ -18,6 +18,21 @@ set noerrorbells
 set visualbell
 set title
 set spell
+set term=screen-256color
+
+" https://github.com/neovim/neovim/issues/583
+set clipboard+=unnamedplus
+
+function! ClipboardYank()
+  call system('xclip -i -selection clipboard', @@)
+endfunction
+function! ClipboardPaste()
+  let @@ = system('xclip -o -selection clipboard')
+endfunction
+
+vnoremap <silent> y y:call ClipboardYank()<cr>
+vnoremap <silent> d d:call ClipboardYank()<cr>
+nnoremap <silent> p :call ClipboardPaste()<cr>p
 
 " https://marcgg.com/blog/2016/03/01/vimrc-example/
 map <leader>s :source ~/.vimrc<CR>
@@ -110,3 +125,7 @@ let g:syntastic_aggregate_errors=1
 let g:syntastic_cpp_checkers=['cppcheck']
 let g:syntastic_cpp_clang_tidy_exec="clang-tidy-6.0"
 let g:syntastic_c_checkers=['cppcheck']
+
+"mine
+let g:ymc_server_python_interpreter = '/usr/bin/python3'
+let g:ycm_global_ycm_extra_conf = '~/.ycm_extra_conf.py'

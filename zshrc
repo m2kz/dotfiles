@@ -143,3 +143,4 @@ alias preview="fzf --preview 'bat --color \"always\" {}'"
 export FZF_DEFAULT_OPTS="--bind='ctrl-o:execute(nvim {})+abort'"
 export LESS='-R'
 export LESSOPEN='|~/.lessfilter %s'
+export TERM="xterm-256color"
