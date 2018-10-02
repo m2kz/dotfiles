@@ -76,6 +76,7 @@ call vundle#end()
 " Vim-plug
 call plug#begin()
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'rdnetto/YCM-Generator', { 'branch': 'stable'}
 call plug#end()
 
 " Pathogen
