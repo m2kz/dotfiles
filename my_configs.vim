@@ -18,7 +18,6 @@ set noerrorbells
 set visualbell
 set title
 set spell
-set term=screen-256color
 
 " https://github.com/neovim/neovim/issues/583
 set clipboard+=unnamedplus
