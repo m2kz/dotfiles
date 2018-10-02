@@ -20,6 +20,8 @@
     ~/.i3status.conf: i3/i3status.conf
     ~/.lessfilter:
     ~/.ycm_extra_conf.py:
+    ~/.ideavimrc:
+    ~/.gitignore_global:
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
