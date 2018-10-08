@@ -17,7 +17,6 @@ set number
 set noerrorbells
 set visualbell
 set title
-set spell
 set nospell
 
 " https://github.com/neovim/neovim/issues/583
