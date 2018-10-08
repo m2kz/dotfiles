@@ -92,9 +92,10 @@ source $HOME/.cargo/env
 
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"
-export PATH=$PATH:/usr/local/go/bin:$HOME/nixnote2/appdir:$HOME/go/bin:$HOME/diff-so-fancy:/snap/bin:$HOME/.local/bin
+export PATH=$PATH:/usr/local/go/bin:$HOME/nixnote2/appdir:$HOME/go/bin:$HOME/diff-so-fancy:/snap/bin:$HOME/.local/bin:$HOME/dotfiles/scripts
 eval $(thefuck --alias)
 source $HOME/.antigen/antigen.zsh
+antigen theme geometry-zsh/geometry
 antigen apply
 export LFS=/mnt/lfs
 alias ping='ping 8.8.8.8'
