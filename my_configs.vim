@@ -140,4 +140,5 @@ let g:syntastic_c_checkers=['cppcheck']
 
 "mine
 let g:ymc_server_python_interpreter = '/usr/bin/python3'
+colorscheme gruvbox
 let g:ycm_global_ycm_extra_conf = '~/.ycm_extra_conf.py'
