@@ -145,3 +145,6 @@ export FZF_DEFAULT_OPTS="--bind='ctrl-o:execute(nvim {})+abort'"
 export LESS='-R'
 export LESSOPEN='|~/.lessfilter %s'
 export TERM="xterm-256color"
+NPM_PACKAGES="${HOME}/.npm-packages"
+
+PATH="$NPM_PACKAGES/bin:$PATH"
