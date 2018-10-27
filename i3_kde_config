@@ -233,3 +233,6 @@ for_window [class="Plasmoidviewer"] floating enable; border none
 for_window [instance="konsole" title="i3 Shortcuts"] floating enable, move absolute position center, resize grow left 318, resize grow right 318, resize grow down 115, resize grow up 115
 
 exec --no-startup-id "compton -b --config ~/.compton.conf"
+bindsym $mod+Tab workspace back_and_forth
+bindsym $mod+Control+Right workspace next_on_output
+bindsym $mod+Control+Left workspace prev_on_output
