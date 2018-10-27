@@ -31,7 +31,7 @@ set $mod Mod4
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
 font pango:Helvetica Neue, FontAwesome 11
- 
+
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
 #font pango:DejaVu Sans Mono 8
@@ -46,7 +46,7 @@ bindsym $mod+Return exec konsole
 bindsym $mod+Shift+q kill
 
 # rofi
-bindsym $mod+d exec --no-startup-id i3-dmenu-desktop --dmenu='rofi -i -dmenu -font "IBM Plex Sans Medium 15" '
+bindsym $mod+d exec "rofi -modi window,drun,run -show drun -sidebar-mode -terminal termite -color-window '#000000, #000000, #000000' -color-normal '#000000, #b3e774, #000000, #b3e774, #000000' -color-active '#000000, #b3e774, #000000, #b3e774, #000000' -color-urgent '#000000, #b3e774, #000000, #b3e774, #000000'"
 # Screenshot (now provided by Plasma)
 # bindsym Print exec --no-startup-id spectacle
 
@@ -198,7 +198,7 @@ bindsym $mod+r mode "resize"
 # i3bar
 bar {
         verbose yes
-        position top 
+        position top
         status_command i3status
         workspace_buttons no
         i3bar_command i3bar -t
@@ -213,7 +213,7 @@ bindsym $mod+x move container to output primary
 # Starting things with i3
 # exec --no-startup-id xcompmgr -C &    # Bare compositor to allow transparency
 for_window [class="yakuake"] floating enable;
-for_window [class="guake"] floating enable; 
+for_window [class="guake"] floating enable;
 
 ## Plasma Integration
 # Try to kill the wallpaper set by Plasma (it takes up the entire workspace and hides everythiing)
