@@ -22,6 +22,7 @@
     ~/.ycm_extra_conf.py:
     ~/.ideavimrc:
     ~/.gitignore_global:
+    ~/.compton.conf:
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]

@@ -50,7 +50,7 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(gitfast autopep8 command-not-found common-aliases compleat debian dircycle history pip pyenv pylint python taskwarrior tmux web-search git git-extras sudo git-extra-commands zsh-syntax-highlighting zsh-autosuggestions git-flow-avh tig tmuxinator)
+plugins=(gitfast autopep8 common-aliases compleat debian dircycle history pip pyenv pylint python taskwarrior tmux web-search git git-extras sudo git-extra-commands zsh-syntax-highlighting zsh-autosuggestions git-flow-avh tig tmuxinator)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -146,5 +146,5 @@ export LESS='-R'
 export LESSOPEN='|~/.lessfilter %s'
 export TERM="xterm-256color"
 NPM_PACKAGES="${HOME}/.npm-packages"
-
+alias gs='gss'
 PATH="$NPM_PACKAGES/bin:$PATH"

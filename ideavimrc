@@ -45,4 +45,4 @@ vnoremap C "_C
 
 xnoremap p pgvy
 
-
+nnoremap ,c :action GotoClass<CR>
