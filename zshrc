@@ -148,3 +148,4 @@ export TERM="xterm-256color"
 NPM_PACKAGES="${HOME}/.npm-packages"
 alias gs='gss'
 PATH="$NPM_PACKAGES/bin:$PATH"
+alias ack='ag'
