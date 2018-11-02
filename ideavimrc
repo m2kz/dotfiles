@@ -1,12 +1,12 @@
 source ~/.vimrc
 
 set clipboard+=unnamed
-
 " https://github.com/JetBrains/ideavim
 " https://github.com/Valloric/dotfiles/blob/master/intellij/ideavimrc
 set surround
 let mapleader = ","
-
+set ttimeout
+set ttimeoutlen=10
 map <Leader>r :action RenameElement<CR>
 map <Leader>s :action FileStructurePopup<CR>
 " uppercase last inserted text
