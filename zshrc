@@ -149,3 +149,12 @@ NPM_PACKAGES="${HOME}/.npm-packages"
 alias gs='gss'
 PATH="$NPM_PACKAGES/bin:$PATH"
 alias ack='ag'
+alias o='xdg-open'
+alias d='cd ~/dotfiles'
+alias memoryhog="ps aux | sort -nk +4 | tail -n 20"
+alias wget='wget -c'
+alias zshedit="nvim ~/.zshrc"
+
+function mkcd() {
+  mkdir -p "$1" && cd "$1"
+}
