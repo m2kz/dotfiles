@@ -186,3 +186,7 @@ nmap <C-k> :action GotoImplementation<CR>
 nmap <C-s> :action EditorSelectWord<CR>
 " same as default IDEA action
 nmap <C-h> :action TypeHierarchy<CR>
+
+" Quickly insert an empty new line without entering insert mode
+    nnoremap <Leader>o o<Esc>
+    nnoremap <Leader>O O<Esc>
