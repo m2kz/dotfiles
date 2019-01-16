@@ -151,3 +151,5 @@ zstyle ':completion:*:*:*:*:processes' menu yes select
 zstyle ':completion:*:*:*:*:processes' list-colors '=(#b) #([0-9]#) ([0-9a-z-]#)*=01;34=0=01'
 zstyle ':completion:*:*:*:*:processes' command "ps -u $USER -o pid,user,args -w -w"
 
+alias sl='sl -e' # no fun allowed
+alias -g LOL='| lolcat'
