@@ -33,7 +33,7 @@ vnoremap C "_C
 xnoremap p pgvy
 " https://github.com/neovim/neovim/issues/583
 set clipboard+=unnamedplus
-let mapleader=" "
+let mapleader=","
 
 function! ClipboardYank()
   call system('xclip -i -selection clipboard', @@)
