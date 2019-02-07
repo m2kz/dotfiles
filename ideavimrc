@@ -188,5 +188,4 @@ nmap <C-s> :action EditorSelectWord<CR>
 nmap <C-h> :action TypeHierarchy<CR>
 
 " Quickly insert an empty new line without entering insert mode
-    nnoremap <Leader>o o<Esc>
-    nnoremap <Leader>O O<Esc>
+nmap <Leader>O O<Esc>
