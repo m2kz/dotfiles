@@ -3,7 +3,7 @@
 set gdefault
 set smartcase
 
-let mapleader = " "
+let mapleader = ","
 
 " use system clipboard
 set clipboard=unnamedplus,unnamed

@@ -4,3 +4,4 @@ compile_commands.json
 islconfig.properties
 .gdb_history
 Doxyfile
+.dir-locals.el
