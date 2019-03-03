@@ -27,38 +27,10 @@
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
   - [sh ~/.vim_runtime/install_awesome_vimrc.sh]
-  - [yes | cp -f my_configs.vim $HOME/.vim_runtime/my_configs.vim]
-  - [curl -fLo $HOME/.vim_runtime/autoload/plug.vim "raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim"]
-  - [curl -fLo $HOME/.vim_runtime/autoload/a.vim raw.githubusercontent.com/vim-scripts/a.vim/master/plugin/a.vim]
-  - ['wget -O $HOME/.vim_runtime/autoload/hjkl.vim www.vim.org/scripts/download_script.php\?src_id\=19242']
-  - [ln -sf $HOME/.vimrc $HOME/.config/nvim/init.vim]
-  - ["git clone --depth=1 git@github.com:rust-lang/rust.vim.git ~/.vim_runtime/my_plugins/rust.vim || git -C ~/.vim_runtime\
-     /my_plugins/rust.vim pull"]
   - ["git clone --depth=1 git@github.com:unixorn/git-extra-commands.git ~/.oh-my-zsh/custom/plugins/git-extra-commands || git -C ~/.oh-my-zsh\
     /custom/plugins/git-extra-commands pull"]
   - ["git clone git@github.com:zsh-users/zsh-syntax-highlighting.git ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting || git -C ~/.oh-my-zsh/\
       custom/plugins/zsh-syntax-highlighting pull"]
   - ["git clone git@github.com:zsh-users/zsh-autosuggestions ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions || git -C ~/.oh-my-zsh/\
     custom/plugins/zsh-autosuggestions pull"]
-  - ["git clone git@github.com:koalaman/shellcheck.git ~/.vim_runtime/my_plugins/shellcheck || git -C ~/.vim_runtime\
-    /my_plugins/shellcheck pull"]
-  - ["git clone https://github.com/tpope/vim-rails.git ~/.vim_runtime/my_plugins/vim-rails || git -C ~/.vim_runtime\
-    /my_plugins/vim-rails pull"]
-  - ["git clone git://github.com/tpope/vim-bundler.git ~/.vim_runtime/my_plugins/vim-bundler || git -C ~/.vim_runtime\
-    /my_plugins/vim-bundler pull"]
-  - ["git clone git://github.com/tpope/vim-dispatch.git ~/.vim_runtime/my_plugins/vim-dispatch || git -C ~/.vim_runtime\
-    /my_plugins/vim-dispatch pull"]
-  -  ["git clone git@github.com:vim-syntastic/syntastic.git ~/.vim_runtime/my_plugins/syntastic || git -C ~/.vim_runtime\
-    /my_plugins/syntastic pull"]
-  -  ["git clone git://github.com/majutsushi/tagbar ~/.vim_runtime/my_plugins/tagbar || git -C ~/.vim_runtime\
-    /my_plugins/tagbar pull"]
-  -  ["git clone git://github.com/vim-ruby/vim-ruby.git ~/.vim_runtime/my_plugins/vim-ruby || git -C ~/.vim_runtime\
-    /my_plugins/vim-ruby pull"]
-  -  ["git clone git://github.com/aperezdc/vim-template.git ~/.vim_runtime/my_plugins/vim-template || git -C ~/.vim_runtime\
-    /my_plugins/vim-template pull"]
-  -  ["git clone git@github.com:tpope/vim-surround.git ~/.vim_runtime/my_plugins/vim-surround || git -C ~/.vim_runtime\
-    /my_plugins/vim-surround pull"]
-  -  ["git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim || git -C ~/.vim/bundle/Vundle.vim pull"]
-  -  ["git clone git@github.com:Valloric/YouCompleteMe.git ~/.vim/bundle/YouCompleteMe || git -C ~/.vim/bundle/YouCompleteMe pull || git -C ~/.vim/bundle/YouCompleteMe submodule update --init --recursive"]
-  -  ["if [ $DESKTOP_SESSION = /usr/bin/i3 ]; then ln -sf `pwd`/i3_xfce_config $HOME/.config/i3/config; fi"]
-  -  ["if [ $DESKTOP_SESSION = plasma ]; then ln -sf `pwd`/i3_kde_config $HOME/.config/i3/config; fi"]
+  - ["if [ $DESKTOP_SESSION = plasma ]; then ln -sf `pwd`/i3_kde_config $HOME/.config/i3/config; fi"]
