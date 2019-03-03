@@ -25,8 +25,8 @@
     ~/.compton.conf:
 
 - shell:
-  - [git submodule update --init --recursive, Installing submodules]
-  - [sh ~/.vim_runtime/install_awesome_vimrc.sh]
+  - [git submodule update --remote --recursive, Installing submodules]
+  - [sh ./.vim_runtime/install_awesome_vimrc.sh]
   - ["git clone --depth=1 git@github.com:unixorn/git-extra-commands.git ~/.oh-my-zsh/custom/plugins/git-extra-commands || git -C ~/.oh-my-zsh\
     /custom/plugins/git-extra-commands pull"]
   - ["git clone git@github.com:zsh-users/zsh-syntax-highlighting.git ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting || git -C ~/.oh-my-zsh/\
