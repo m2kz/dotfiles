@@ -3,8 +3,7 @@ export ZSH=/home/`whoami`/.oh-my-zsh
 ZSH_THEME="robbyrussell"
 HYPHEN_INSENSITIVE="true"
 COMPLETION_WAITING_DOTS="true"
-
-plugins=(autopep8 common-aliases compleat debian dircycle history pip pyenv pylint python taskwarrior tmux web-search git sudo zsh-syntax-highlighting zsh-autosuggestions tmuxinator colorize colored-man-pages)
+plugins=(branch gitfast autopep8 common-aliases compleat debian dircycle extract ssh-agent zsh-syntax-highlighting zsh-autosuggestions taskwarrior tmux web-search git sudo tig vi-mode colorize colored-man-page)
 
 source $ZSH/oh-my-zsh.sh
 
