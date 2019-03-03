@@ -10,25 +10,18 @@ source $ZSH/oh-my-zsh.sh
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 export PATH=$HOME/bin:$PATH
-if [ -f ~/.config/exercism/exercism_completion.zsh ]; then
-	. ~/.config/exercism/exercism_completion.zsh
-fi
 source $HOME/.cargo/env
-
-# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"
-export PATH=$PATH:/usr/local/go/bin:$HOME/nixnote2/appdir:$HOME/go/bin:$HOME/diff-so-fancy:/snap/bin:$HOME/.local/bin:$HOME/dotfiles/scripts
+export PATH=$PATH:/usr/local/go/bin:$HOME/nixnote2/appdir:$HOME/go/bin:$HOME/diff-so-fancy:/snap/bin:$HOME/dotfiles/scripts
+export PATH=$HOME/.local/bin:$PATH
 eval $(thefuck --alias)
 source $HOME/.antigen/antigen.zsh
 antigen theme geometry-zsh/geometry
 antigen apply
-export LFS=/mnt/lfs
-alias ping='ping 8.8.8.8'
+alias ping='ping 4.2.2.1'
 export EDITOR=nvim
-. $HOME/z/z.sh
-alias la="exa -abghl --git --color=automatic"
-alias c='pygmentize -O style=colorful -f console256 -g'
-# source /etc/profile.d/rvm.sh
+source $HOME/z/z.sh
+
 alias in='task add +in'
 export PS1='$(task +in +PENDING count) '$PS1
 tickle () {
@@ -39,34 +32,15 @@ tickle () {
 alias tick=tickle
 alias think='tickle +1d'
 alias rnd='task add +rnd +next +@computer +@online'
-webpage_title (){
-    wget -qO- "$*" | hxselect -s '\n' -c  'title' 2>/dev/null
-}
-
-read_and_review (){
-    link="$1"
-    title=$(webpage_title $link)
-    echo $title
-    descr="\"Read and review: $title\""
-    id=$(task add +next +rnr "$descr" | sed -n 's/Created task \(.*\)./\1/p')
-    task "$id" annotate "$link"
-}
-
-alias rnr=read_and_review
 bkr() {
     (nohup "$@" &>/dev/null &)
 }
-alias mux=tmuxinator
-# export PATH="$PATH:$HOME/esp/xtensa-esp32-elf/bin"
-# export IDF_PATH=$HOME/esp/esp-idf
 fpath=(~/bin/ $fpath)
 alias mountp='mount | column -t'
 HISTFILE=~/.zsh_history
 HISTSIZE=999999999
 SAVEHIST=$HISTSIZE
 setopt SHARE_HISTORY
-alias preview="fzf --preview 'bat --color \"always\" {}'"
-export FZF_DEFAULT_OPTS="--bind='ctrl-o:execute(nvim {})+abort'"
 export LESS='-R'
 export LESSOPEN='|~/.lessfilter %s'
 export TERM="xterm-256color"
