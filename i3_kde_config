@@ -237,3 +237,4 @@ bindsym $mod+Tab workspace back_and_forth
 bindsym $mod+Control+Right workspace next_on_output
 bindsym $mod+Control+Left workspace prev_on_output
 exec_always --no-startup-id feh --bg-scale ~/Pictures/wallpaper.jpg
+no_focus [window_role="pop-up"]
