@@ -18,7 +18,6 @@ source $HOME/.antigen/antigen.zsh
 antigen theme geometry-zsh/geometry
 antigen apply
 alias ping='ping 4.2.2.1'
-export EDITOR=nvim
 source $HOME/z/z.sh
 
 alias in='task add +in'
@@ -51,11 +50,17 @@ alias o='xdg-open'
 alias d='cd ~/dotfiles'
 alias memoryhog="ps aux | sort -nk +4 | tail -n 20"
 alias wget='wget -c'
-alias zshedit="nvim ~/.zshrc"
 
 function mkcd() {
   mkdir -p "$1" && cd "$1"
 }
+
+alias e="emacsclient -t -a ''"
+alias eb="emacsbare"
+alias ec="emacsclient -c -n -a ''"
+alias vim="e"
+alias vi="e"
+
 zstyle ':completion:*' rehash true
 zstyle ':completion:*' group-name ''
 zstyle ':completion:*' list-dirs-first true

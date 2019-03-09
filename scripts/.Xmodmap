@@ -1,0 +1,4 @@
+clear mod4
+clear lock
+add mod4 = Meta_L
+add mod3 = Hyper_L
