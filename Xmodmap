@@ -1,5 +1,7 @@
 clear mod4
+clear mod3
+clear mod1
 clear lock
-keycode 66 = Hyper_L
-add mod4 = Meta_L
-add mod3 = Hyper_L
+keycode 66 = Meta_L
+add mod4 = Hyper_L
+add mod3 = Meta_L

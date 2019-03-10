@@ -351,3 +351,30 @@ before packages are loaded. If you are unsure, you should try in setting them in
   (add-hook 'spacemacs-buffer-mode-hook (lambda ()
                                           (set (make-local-variable 'mouse-1-click-follows-link) nil)))
   )
+(defun dotspacemacs/emacs-custom-settings ()
+  "Emacs custom settings.
+This is an auto-generated function, do not modify its content directly, use
+Emacs customize menu instead.
+This function is called at the very end of Spacemacs initialization."
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(safe-local-variable-values
+   (quote
+    ((helm-ctest-dir . "~/work/sasnet/build/")
+     (helm-make-arguments . "-j4")
+     (helm-make-build-dir . "build")
+     (cmake-ide-cmake-opts . "-DCMAKE_BUILD_TYPE=Debug -DCMAKE_EXPORT_COMPILE_COMMANDS=ON")
+     (cmake-ide-build-dir . "~/work/sasnet/build")
+     (cmake-ide-project-dir . "~/work/sasnet")
+     (javascript-backend . tern)
+     (javascript-backend . lsp)))))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ )
+)
