@@ -5,3 +5,4 @@ islconfig.properties
 .gdb_history
 Doxyfile
 .dir-locals.el
+clang-tidy-diff.py
