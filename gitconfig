@@ -45,6 +45,7 @@
 [core]
   attributesfile = /home/michal/.gitattributes
   excludesfile = /home/michal/.gitignore_global
+	editor = emacs -nw
 [filter "ignorelineFilter"]
   smudge = cat
   clean = sed "s#//.*ignoreline.*##"

@@ -92,3 +92,4 @@ function cheat() {
       curl cht.sh/$1
 }
 alias fx='firefox --new-instance --profile $(mktemp -d)'
+export FZF_DEFAULT_COMMAND='fd --type f --hidden --follow --exclude .git'
