@@ -1,7 +1,11 @@
+! In Keyboard settings in KDE change CapsLock behaviour to be additional Super (don't know if it makes sense) and Hyper to be Win (same)
 clear mod4
 clear mod3
 clear mod1
 clear lock
-keycode 66 = Meta_L
+!Alt button
+add mod1 = Meta_L
+!Win button
 add mod4 = Hyper_L
-add mod3 = Meta_L
+!CapsLock button
+add mod3 = Super_L
