@@ -239,5 +239,5 @@ bindsym $mod+Control+Left workspace prev_on_output
 exec_always --no-startup-id feh --bg-scale ~/Pictures/wallpaper.jpg
 no_focus [window_role="pop-up"]
 
-bindsym $mod+o exec ~/dotfiles/scripts/i3open.py
-bindsym $mod+Shift+o exec ~/dotfiles/scripts/i3move.py
+bindsym $mod+o exec /nix/store/dwi186iqm6p3kfncfsl62fbfwfry1yci-python3-3.7.3/bin/python ~/dotfiles/scripts/i3open.py
+bindsym $mod+Shift+o exec /nix/store/dwi186iqm6p3kfncfsl62fbfwfry1yci-python3-3.7.3/bin/python ~/dotfiles/scripts/i3move.py

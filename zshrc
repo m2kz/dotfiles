@@ -9,7 +9,6 @@ source $ZSH/oh-my-zsh.sh
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 export PATH=$HOME/bin:$PATH
-source $HOME/.cargo/env
 export PATH="$PATH:$HOME/.rvm/bin"
 export PATH=$PATH:/usr/local/go/bin:$HOME/nixnote2/appdir:$HOME/go/bin:$HOME/diff-so-fancy:/snap/bin:$HOME/dotfiles/scripts
 export PATH=$HOME/.local/bin:$PATH
@@ -17,7 +16,6 @@ eval $(thefuck --alias)
 source $HOME/.antigen/antigen.zsh
 antigen theme geometry-zsh/geometry
 antigen apply
-alias ping='ping 4.2.2.1'
 source $HOME/z/z.sh
 
 alias in='task add +in'
