@@ -28,7 +28,7 @@ This function should only modify configuration layer settings."
 
    ;; If non-nil layers with lazy install support are lazy installed.
    ;; List of additional paths where to look for configuration layers.
-   ;; Paths must haove a trailing slash (i.e. `~/.mycontribs/')
+   ;; Paths must haove a trailing slash (i.e. `/home/mkarczew/.mycontribs/')
    dotspacemacs-configuration-layer-path '()
 
    ;; List of configuration layers to load.
@@ -76,9 +76,6 @@ This function should only modify configuration layer settings."
              python-sort-imports-on-save t)
      (rust :variables
            rust-format-on-save t)
-     (org :variables
-          org-enable-org-journal-support t
-          org-projectile-file "~/emacs-org/TODOs.org")
      ;; (shell :variables
      ;;        shell-default-height 30
      ;;        shell-default-position 'bottom)
@@ -87,6 +84,7 @@ This function should only modify configuration layer settings."
      version-control
      nixos
      docker
+     org
      )
 
    ;; List of additional packages that will be installed without being
@@ -94,7 +92,7 @@ This function should only modify configuration layer settings."
    ;; packages, then consider creating a layer. You can also put the
    ;; configuration in `dotspacemacs/user-config'.
    ;; To use a local version of a package, use the `:location' property:
-   ;; '(your-package :location "~/path/to/your-package/")
+   ;; '(your-package :location "/home/mkarczew/path/to/your-package/")
    ;; Also include the dependencies as they will not be resolved automatically.
    dotspacemacs-additional-packages '(anki-editor dockerfile-mode)
 
@@ -136,7 +134,7 @@ It should only modify the values of Spacemacs settings."
    ;; portable dumper in the cache directory under dumps sub-directory.
    ;; To load it when starting Emacs add the parameter `--dump-file'
    ;; when invoking Emacs 27.1 executable on the command line, for instance:
-   ;;   ./emacs --dump-file=~/.emacs.d/.cache/dumps/spacemacs.pdmp
+   ;;   ./emacs --dump-file=/home/mkarczew/.emacs.d/.cache/dumps/spacemacs.pdmp
    ;; (default spacemacs.pdmp)
    dotspacemacs-emacs-dumper-dump-file "spacemacs.pdmp"
 
@@ -406,7 +404,7 @@ It should only modify the values of Spacemacs settings."
 
    ;; Set the emacs server socket location.
    ;; If nil, uses whatever the Emacs default is, otherwise a directory path
-   ;; like \"~/.emacs.d/server\". It has no effect if
+   ;; like \"/home/mkarczew/.emacs.d/server\". It has no effect if
    ;; `dotspacemacs-enable-server' is nil.
    ;; (default nil)
    dotspacemacs-server-socket-dir nil
@@ -463,7 +461,7 @@ It should only modify the values of Spacemacs settings."
   "Environment variables setup.
 This function defines the environment variables for your Emacs session. By
 default it calls `spacemacs/load-spacemacs-env' which loads the environment
-variables declared in `~/.spacemacs.env' or `~/.spacemacs.d/.spacemacs.env'.
+variables declared in `/home/mkarczew/.spacemacs.env' or `/home/mkarczew/.spacemacs.d/.spacemacs.env'.
 See the header of this file for more information."
   (spacemacs/load-spacemacs-env))
 
@@ -495,7 +493,7 @@ before packages are loaded."
               (setq flycheck-cppcheck-language-standard "c++17")
               (setq flycheck-clang-language-standard "c++17")
               ))
-  (setq org-journal-dir "~/emacs-org/journal/")
+  (setq org-journal-dir "/home/mkarczew/emacs-org/journal/")
   (setq company-idle-delay 0)
   (add-hook 'text-mode-hook 'flyspell-mode)
   (add-hook 'prog-mode-hook 'flyspell-prog-mode)
@@ -503,7 +501,7 @@ before packages are loaded."
   (setq-default c-basic-offset 4)
   (setq-default tab-width 4)
   (setq flycheck-python-pycompile-executable "python3")
-  (setq org-agenda-files (list "~/emacs-org/todo.org"))
+  (setq org-agenda-files (list "/home/mkarczew/Nextcloud3/orgmode/todo.org"))
   (add-hook 'doc-view-mode-hook 'auto-revert-mode)
   (defun et/semantic-remove-hooks ()
     (remove-hook 'completion-at-point-functions
@@ -534,12 +532,12 @@ This function is called at the very end of Spacemacs initialization."
     (godoctor go-tag go-rename go-impl go-guru go-gen-test go-fill-struct go-eldoc flycheck-gometalinter flycheck-golangci-lint company-go go-mode anki-editor web-mode tagedit slim-mode scss-mode sass-mode pug-mode less-css-mode helm-css-scss haml-mode emmet-mode counsel-css company-web web-completion-data web-beautify tern prettier-js livid-mode skewer-mode js2-refactor multiple-cursors js2-mode js-doc impatient-mode simple-httpd helm-gtags ggtags counsel-gtags add-node-modules-path helm-rtags rtags google-c-style disaster clang-format ws-butler writeroom-mode winum which-key volatile-highlights vi-tilde-fringe uuidgen use-package treemacs-projectile treemacs-evil toc-org symon string-inflection spaceline-all-the-icons restart-emacs request rainbow-delimiters popwin persp-mode pcre2el password-generator paradox overseer org-plus-contrib org-bullets open-junk-file nameless move-text macrostep lorem-ipsum linum-relative link-hint indent-guide hungry-delete hl-todo highlight-parentheses highlight-numbers highlight-indentation helm-xref helm-themes helm-swoop helm-purpose helm-projectile helm-mode-manager helm-make helm-flx helm-descbinds helm-ag google-translate golden-ratio font-lock+ flx-ido fill-column-indicator fancy-battery eyebrowse expand-region evil-visualstar evil-visual-mark-mode evil-unimpaired evil-tutor evil-surround evil-numbers evil-nerd-commenter evil-mc evil-matchit evil-lisp-state evil-lion evil-indent-plus evil-iedit-state evil-goggles evil-exchange evil-escape evil-ediff evil-cleverparens evil-args evil-anzu eval-sexp-fu elisp-slime-nav editorconfig dumb-jump dotenv-mode doom-modeline diminish define-word counsel-projectile column-enforce-mode clean-aindent-mode centered-cursor-mode auto-highlight-symbol auto-compile aggressive-indent ace-link ace-jump-helm-line)))
  '(safe-local-variable-values
    (quote
-    ((helm-ctest-dir . "~/work/sasnet/build/")
+    ((helm-ctest-dir . "/home/mkarczew/work/sasnet/build/")
      (helm-make-arguments . "-j4")
      (helm-make-build-dir . "build")
      (cmake-ide-cmake-opts . "-DCMAKE_BUILD_TYPE=Debug -DCMAKE_EXPORT_COMPILE_COMMANDS=ON")
-     (cmake-ide-build-dir . "~/work/sasnet/build")
-     (cmake-ide-project-dir . "~/work/sasnet")))))
+     (cmake-ide-build-dir . "/home/mkarczew/work/sasnet/build")
+     (cmake-ide-project-dir . "/home/mkarczew/work/sasnet")))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
